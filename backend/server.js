@@ -21,7 +21,7 @@ app.use(helmet());
 app.use(cors({
   origin: process.env.NODE_ENV === 'production' 
     ? process.env.FRONTEND_URL 
-    : ['http://localhost:5173', 'http://localhost:3000'], // allow multiple origins
+    : ['http://localhost:5173', 'http://localhost:3000', 'https://interview-prep-sandy-five.vercel.app/login'], // allow multiple origins
   credentials: true,
 }));
 app.use(express.json());
