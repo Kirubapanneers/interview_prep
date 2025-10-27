@@ -1,22 +1,59 @@
-# Node
+# Node modules
 node_modules/
-npm-debug.log
-yarn-error.log
+**/node_modules/
 
-# Env files
+# Build output
+dist/
+build/
+.cache/
+.next/
+out/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
 .env
 .env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
-# Build outputs
-build/
-dist/
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
 
-# Frontend
-frontend/node_modules/
-frontend/.env
-frontend/build/
+# Coverage reports
+coverage/
+*.lcov
 
-# Backend
-backend/node_modules/
-backend/.env
-backend/uploads/
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.bak
+
+# Uploads (if you’re storing temporary files)
+uploads/
+public/uploads/
+
+# Dependency caches
+package-lock.json
+yarn.lock
+
+# Miscellaneous
+*.pid
+*.seed
+*.pid.lock
+
+# OneDrive sync junk (important since you’re on OneDrive)
+~$*
+*.lnk
+desktop.ini
